@@ -14,7 +14,9 @@ You can use the chatbot by typing in the terminal:  (assumed you are in project 
     ```
     python chatbot.py
     ```
-
+## Working Output
+   ![image](https://user-images.githubusercontent.com/76954940/147852126-37e68396-ec88-4ebe-92b9-1aa56cc2e680.png)
+    
 ---
 ## Contribute
 <p> You can contribute in this project by fulfilling these requestes.
