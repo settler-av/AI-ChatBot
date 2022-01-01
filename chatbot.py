@@ -12,7 +12,7 @@ from tensorflow.keras.models import load_model
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
-#get the words and class from the pickle file
+# get the words and class from the pickle file
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 
@@ -62,9 +62,7 @@ def get_responce(intents_list, intents_json):
             break
     return result
 
+
 print("GO! bot is running!")
 while True:
-    message = input("")
-    ints = predict_class(message)
-    res = get_responce(ints, intents)
-    print(res)
+    print(get_responce(predict_class(input("")), intents))
